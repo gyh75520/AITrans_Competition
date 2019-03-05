@@ -18,9 +18,9 @@
 ## The Architecture
 ![](assets/markdown-img-paste-20190305141130191.png)
 
-throughput 是一个很重要的特征，并且agent的策略好坏不会影响throughput，如果我们可以预知下一时刻的 throughput，agent就可以利用这个信息做出更好的决策。
+Throughput 是一个很重要的特征，并且 Agent 的策略好坏不会影响 Throughput ，如果我们可以预知下一时刻的 Throughput，Agent 就可以利用这个信息做出更好的决策。
 
-因此，我们添加了一个辅助网络，用来预测下一个时刻的 throughput，它和策略价值网络一样，共享 Network A。辅助网络通过训练，能够更准确地预测 throughput，同时P V网络也通过共享的 Network A 间接地提取到了更有用的高阶特征，从而增强整个 model 的 表现。
+因此，我们添加了一个辅助网络，用来预测下一个时刻的 Throughput，它和策略价值网络一样，共享 Network A。辅助网络通过训练，能够更准确地预测 Throughput，同时 P V 网络也通过共享的 Network A 间接地提取到了更有用的高阶特征，从而增强整个 Model 的 表现。
 
 ## A2C + Throughput Prediction vs A2C
 ![](assets/markdown-img-paste-20190305141228433.png)
