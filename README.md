@@ -18,7 +18,7 @@
 
 ## The Architecture
 
-<img src="assets/markdown-img-paste-20190305141130191.png" width=600 />
+<img src="assets/markdown-img-paste-20190305142608438.png" width=600 />
 
 Throughput 是一个很重要的特征，并且 Agent 的策略好坏不会影响 Throughput ，如果我们可以预知下一时刻的 Throughput，Agent 就可以利用这个信息做出更好的决策。
 
@@ -28,3 +28,7 @@ Throughput 是一个很重要的特征，并且 Agent 的策略好坏不会影�
 ![](assets/markdown-img-paste-20190305141228433.png)
 
 ## REF
+
+* [Neural Adaptive Video Streaming with Pensieve](http://web.mit.edu/pensieve/content/pensieve-sigcomm17.pdf)
+
+* [Asynchronous Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1602.01783)
