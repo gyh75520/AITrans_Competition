@@ -13,7 +13,8 @@
 **An Actor-Critic Approach with Auxiliary Network  for Adaptive Video Streaming**
 
 ## Construct Input
-![](assets/markdown-img-paste-20190305141006336.png)
+
+<img src="assets/markdown-img-paste-20190305141006336.png" width=600 />
 
 ## The Architecture
 ![](assets/markdown-img-paste-20190305141130191.png)
@@ -24,3 +25,5 @@ Throughput 是一个很重要的特征，并且 Agent 的策略好坏不会影�
 
 ## A2C + Throughput Prediction vs A2C
 ![](assets/markdown-img-paste-20190305141228433.png)
+
+## REF
