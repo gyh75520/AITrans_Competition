@@ -1,2 +1,26 @@
 # AITrans_Competition
-全球智能网络传输竞赛 
+全球智能网络传输竞赛
+
+# Dependency
+> Tested in macOS and Linux
+
+* OpenAI gym
+* Tensorflow v1.11
+* Python  3.6
+* stable_baselines
+
+# Our Alogrithm
+**An Actor-Critic Approach with Auxiliary Network  for Adaptive Video Streaming**
+
+## Construct Input
+![](assets/markdown-img-paste-20190305141006336.png)
+
+## The Architecture
+![](assets/markdown-img-paste-20190305141130191.png)
+
+throughput 是一个很重要的特征，并且agent的策略好坏不会影响throughput，如果我们可以预知下一时刻的 throughput，agent就可以利用这个信息做出更好的决策。
+
+因此，我们添加了一个辅助网络，用来预测下一个时刻的 throughput，它和策略价值网络一样，共享 Network A。辅助网络通过训练，能够更准确地预测 throughput，同时P V网络也通过共享的 Network A 间接地提取到了更有用的高阶特征，从而增强整个 model 的 表现。
+
+## A2C + Throughput Prediction vs A2C
+![](assets/markdown-img-paste-20190305141228433.png)
